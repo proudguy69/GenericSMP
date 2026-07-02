@@ -6,6 +6,10 @@
                 <span>GenericSMP</span>
             </div>
         </template>
+
+        <template #right>
+            <UButton class="bg-[#5865F2] hover:bg-[#E0E3FF] hover:cursor-pointer" icon="ic:baseline-discord" to="https://discord.gg/GASyt8p4jw">Discord</UButton>
+        </template>
     </UHeader>
 
     <UPage>
@@ -61,6 +65,16 @@
 </template>
 
 <script setup>
+const desc = "Java 26.2 Generic SMP is a chill casual SMP that allows pvp and stealing! Join the new refreshing SMP that ISNT owned by ross! GenericSMP is NOT wannabeSMP and it also isnt trash"
+useSeoMeta({
+    title: 'GenericSMP',
+    description: desc,
+    ogTitle: 'GenericSMP',
+    ogDescription: desc,
+    themeColor: '#eb4034',
+    ogUrl: 'https://smp.orangegreencat.com'
+})
+
 import Command from '~/components/Command.vue';
 const toast = useToast()
 
